@@ -544,10 +544,20 @@ border-radius: 5px;
         
     }
 }
+.container-fluid{
+    background-color: #6E98B8;
+}
 .letras{
     font-family: Anton;
-    color: #486E62;
+    color:#1F4E7A;
     
+}
+.calzado{
+    background-color: #6E98B8;
+}
+.letra__calzado{
+    color: #1F4E7A;
+    font-family: Anton;
 }
 
 /*-----------------------INDEX-----------------------*/

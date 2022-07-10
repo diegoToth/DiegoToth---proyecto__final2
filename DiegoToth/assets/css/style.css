@@ -48,32 +48,20 @@
 }
 .contenedorEnlases{
     background-color: #1F4E7A;
+    margin: 10px;
 }
 .enlace{
     background-color: #6E98B8;
     border-radius: 10px;
 }
-.contenedorPromocion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+.contenedor__promocion{
     background-color: #1F4E7A;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-.promocion img{
-    width: 400px;
-    background-color: #6E98B8;
+    border-radius: 5px;
     margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
 }
-.promocion h3{
-    text-align: center;
-    font-family: Anton;
-    font-style: normal;
-    font-size: 20px;
+.card__promocion{
+    background-color: #6E98B8;
+    border-radius: 10px;
 }
 .contenedorInfoPers{
     margin: 5px;
@@ -162,6 +150,7 @@
     color: #1F4E7A;
     font-family: Anton;
 }
+
 
 /*-----------------------INDEX-----------------------*/
 

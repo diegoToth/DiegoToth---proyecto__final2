@@ -1,0 +1,9 @@
+.container-fluid{
+    background-color:$colorPrimario;
+    .navbar-brand{
+        background-color:$colorPrimario;
+    }
+    a{
+        color:$colorTerciario; 
+    }
+}

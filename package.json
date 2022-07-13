@@ -1,0 +1,26 @@
+{
+  "name": "diegototh---proybootstrap---copia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoToth/DiegoToth---proyecto__final2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoToth/DiegoToth---proyecto__final2/issues"
+  },
+  "homepage": "https://github.com/diegoToth/DiegoToth---proyecto__final2#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

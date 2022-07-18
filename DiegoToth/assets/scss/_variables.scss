@@ -2,5 +2,18 @@ $colorPrimario:#1F4E7A;
 $colorSecundario:#327EC7;
 $colorTerciario:#6E98B8;
 $tamanioTitulo:34px;
-$colorLetras:#B0BBC3;
+$colorLetras:black;
 $tamanioTexto:20px;
+$justify:(
+    start:start,
+    center:center,
+    end:end,
+    around:space-around,
+    evenly:space-evenly,
+    between:space-between,
+);
+$btn:(
+    padding:10 px 15 px,
+    bordes:0,
+    radio:5px,
+);

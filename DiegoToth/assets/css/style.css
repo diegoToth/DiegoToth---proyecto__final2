@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container-fluid {
@@ -18,13 +19,46 @@
 }
 
 .titulo {
-  color: #B0BBC3;
-}
-
-.card2 {
-  background-color: #1F4E7A;
-}
-
-.btn {
   color: black;
+}
+
+.containerCardPelota {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardPelota {
+  width: 300px;
+  height: auto;
+  color: black;
+}
+
+.cardPelota {
+  background-color: white;
+  color: black;
+}
+
+.cardPelota-start {
+  justify-content: start;
+}
+
+.cardPelota-center {
+  justify-content: center;
+}
+
+.cardPelota-end {
+  justify-content: end;
+}
+
+.cardPelota-around {
+  justify-content: space-around;
+}
+
+.cardPelota-evenly {
+  justify-content: space-evenly;
+}
+
+.cardPelota-between {
+  justify-content: space-between;
 }

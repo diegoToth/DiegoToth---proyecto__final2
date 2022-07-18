@@ -1,24 +1,43 @@
 
+
+
 @import "reset";
 @import "variables";
 @import "navbar";
+@import "mixin";
+@import "tarjetas";
 @import "footer";
-
-
 
 .titulo{
     color:$colorLetras;
-}
-
-
-.card2{
-    background-color:$colorPrimario;
-
-}
-.btn{
-    color: black;
     
-    }
+}
+
+.containerCardPelota{
+    @include flex-row-center;
+    
+
+}
+.cardPelota{
+    padding: map-get($justify, padding);
+    border: map-get($justify, bordes);
+    border-radius: map-get($justify, radio);
+    @include prop(300px,auto,black);
+}
+.cardPelota{
+    @extend .cardPelota;
+    background-color:white;
+    color: $colorLetras;
+    
+}
+@each $clave, $var in $justify {
+        .cardPelota-#{$clave}{
+            justify-content: $var;
+        }
+        
+}
+
+
     
 
 

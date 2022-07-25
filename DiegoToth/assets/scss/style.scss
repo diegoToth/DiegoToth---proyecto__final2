@@ -36,8 +36,46 @@
         }
         
 }
+.cards{
+    border: 10px;
+    .marca{
+        font-family: 'Roboto Condensed',sans-serif,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .estilo{
+        font-family: 'Roboto Condensed',sans-serif,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-weight: 600;   
+    }
+}
 
+.descUbicacion{
+    background-color:$colorTerciario;
+    .lugar{
+        font-size: $tamanioTexto;
+    }
+    .direccion{
+        font-size: $tamanioTexto;
 
+    }
+}
+.footer{
+    padding: 10px;
+    margin: 0;
+    .footerCopy{
+        display: flex;
+        justify-content: flex-start;
+        text-align: start;
+        padding-right: 100px;
+    }
+    .logoFooter{
+        width: 150px;
+    }
+    .Clientes{
+        padding: 0;
+    }
     
+}
+
 
 

@@ -62,3 +62,43 @@
 .cardPelota-between {
   justify-content: space-between;
 }
+
+.cards {
+  border: 10px;
+}
+.cards .marca {
+  font-family: "Roboto Condensed", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cards .estilo {
+  font-family: "Roboto Condensed", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.descUbicacion {
+  background-color: #6E98B8;
+}
+.descUbicacion .lugar {
+  font-size: 20px;
+}
+.descUbicacion .direccion {
+  font-size: 20px;
+}
+
+.footer {
+  padding: 10px;
+  margin: 0;
+}
+.footer .footerCopy {
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  padding-right: 100px;
+}
+.footer .logoFooter {
+  width: 150px;
+}
+.footer .Clientes {
+  padding: 0;
+}

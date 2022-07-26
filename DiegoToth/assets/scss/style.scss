@@ -12,11 +12,20 @@
     color:$colorLetras;
     
 }
+.cont__navbar{
+    padding: 0;
 
-.containerCardPelota{
+}
+
+
+.containerPelota{
     @include flex-row-center;
+    margin: 0;
     
 
+}
+.cardPelota{
+    margin: 0;
 }
 .cardPelota{
     padding: map-get($justify, padding);
@@ -48,7 +57,14 @@
         font-weight: 600;   
     }
 }
-
+.contenedoraVideos{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    .video{
+        padding: 0;
+    }
+}
 .descUbicacion{
     background-color:$colorTerciario;
     .lugar{
@@ -76,6 +92,23 @@
     }
     
 }
-
-
+.contenedor__promocion{
+    margin: 0;
+}
+.containerPelota{
+    padding: 0;
+    margin: 0;
+}
+.cardCalzado{
+    margin: 0;
+}.contenedorEnlase{
+    padding: 0;
+    .enlase{
+        padding: 0;
+        .enlaseAcceso{
+            padding: 0;
+        } 
+    }
+    
+}
 

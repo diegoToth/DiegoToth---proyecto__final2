@@ -22,10 +22,19 @@
   color: black;
 }
 
-.containerCardPelota {
+.cont__navbar {
+  padding: 0;
+}
+
+.containerPelota {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0;
+}
+
+.cardPelota {
+  margin: 0;
 }
 
 .cardPelota {
@@ -76,6 +85,15 @@
   font-weight: 600;
 }
 
+.contenedoraVideos {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.contenedoraVideos .video {
+  padding: 0;
+}
+
 .descUbicacion {
   background-color: #6E98B8;
 }
@@ -100,5 +118,28 @@
   width: 150px;
 }
 .footer .Clientes {
+  padding: 0;
+}
+
+.contenedor__promocion {
+  margin: 0;
+}
+
+.containerPelota {
+  padding: 0;
+  margin: 0;
+}
+
+.cardCalzado {
+  margin: 0;
+}
+
+.contenedorEnlase {
+  padding: 0;
+}
+.contenedorEnlase .enlase {
+  padding: 0;
+}
+.contenedorEnlase .enlase .enlaseAcceso {
   padding: 0;
 }

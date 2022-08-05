@@ -8,31 +8,134 @@
 @import "tarjetas";
 @import "footer";
 
+html, body {
+    overflow: auto;
+}
+
 .titulo{
     color:$colorLetras;
     
 }
 .cont__navbar{
     padding: 0;
+    width: 100%;
 
 }
-.carousel{
-    width: 85%;
+.carouselContainer{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    text-align: center;
-    align-items: center
-
+    justify-content: center;
+    .carouselImg{
+        width: 100%;
+    }
+    .corouselButton{
+        width:100%;
+    }
+}
+.containerCards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 10px;
+    .cardPersonalizada{
+        padding: 10px;
+        
+    .cards{
+        border: 10px;
+        .marca{
+            font-family: 'Roboto Condensed',sans-serif,'Helvetica Neue',Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .estilo{
+            font-family: 'Roboto Condensed',sans-serif,'Helvetica Neue',Helvetica,Arial,sans-serif;
+            font-weight: 600;   
+        }
+    }
+}
     
-    
-
 }
 
 
+@media(max-width:992px){
+    .carouselImg{
+        width: 970px;
+    }
+    .cardPersonalizada{
+        width: 20%;
+    }
+}
+
+@media(max-width:768px){
+    .cardPersonalizada{
+        width: 500px;
+    }
+    
+    .carouselImg{
+        width: 750px;
+    }
+}
+
+
+@media(max-width:576px){
+    .cardPersonalizada{
+        width: 500px;
+    }
+}
+.video{
+    width: 900px;
+}
+@media(max-width:992px){
+    .video{
+        width: 760px;
+    }
+}
+@media(max-width:768px){
+    .video{
+        width: 570px;
+    }
+}
+.imgBanner{
+    width: 900px;
+    margin: 0;
+}
+@media(max-width:992px){
+    .imgBanner{
+        width: 800px;
+    }
+}
+@media(max-width:768px){
+    .imgBanner{
+        width: 680px;
+    }
+}
+@media(max-width:576px){
+    .imgBanner{
+        width: 450px;
+    }
+    .cardPersonalizada{
+        width: 480px;
+    }
+}
+@media(max-width:488px){
+    .imgBanner{
+        width: 350px;
+    }
+    .cardPersonalizada{
+        width: 330px;
+    }
+}
+@media(max-width:320px){
+    .cardPersonalizada{
+        width: 220px;
+    }
+}
 .containerPelota{
     @include flex-row-center;
     margin: 0;
+    width: 90%;
     
 
 }
@@ -57,25 +160,27 @@
         }
         
 }
-.cards{
-    border: 10px;
-    .marca{
-        font-family: 'Roboto Condensed',sans-serif,'Helvetica Neue',Helvetica,Arial,sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-    }
-    .estilo{
-        font-family: 'Roboto Condensed',sans-serif,'Helvetica Neue',Helvetica,Arial,sans-serif;
-        font-weight: 600;   
-    }
-}
+
 .contenedoraVideos{
+    width: 90%;
     border: 0;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     .video{
-        padding: 0;
+        padding: 10px;
     }
+}
+.contenedorEnlases{
+    width: 90%;
+    border: 0;
+    margin: 0;
+    padding: 10px;
+}
+.banner{
+    width: 90%;
+}
+.contenedor__promocion{
+    width:90%;
 }
 .descUbicacion{
     background-color:$colorTerciario;
@@ -87,9 +192,18 @@
 
     }
 }
+.pieDespedida{
+    width: 90%;
+}
+.BannerFP{
+    width: 90%;
+}
 .footer{
     padding: 10px;
-    margin: 0;
+    border-radius: 10px;
+    border: 10px;
+    margin: 5px;
+    
     .footerCopy{
         display: flex;
         justify-content: flex-start;

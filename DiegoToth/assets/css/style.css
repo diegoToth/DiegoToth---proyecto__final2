@@ -18,28 +18,132 @@
   background-color: #327EC7;
 }
 
+html, body {
+  overflow: auto;
+}
+
 .titulo {
   color: black;
 }
 
 .cont__navbar {
   padding: 0;
+  width: 100%;
 }
 
-.carousel {
-  width: 85%;
+.carouselContainer {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
+}
+.carouselContainer .carouselImg {
+  width: 100%;
+}
+.carouselContainer .corouselButton {
+  width: 100%;
 }
 
+.containerCards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 10px;
+}
+.containerCards .cardPersonalizada {
+  padding: 10px;
+}
+.containerCards .cardPersonalizada .cards {
+  border: 10px;
+}
+.containerCards .cardPersonalizada .cards .marca {
+  font-family: "Roboto Condensed", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.containerCards .cardPersonalizada .cards .estilo {
+  font-family: "Roboto Condensed", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .carouselImg {
+    width: 970px;
+  }
+  .cardPersonalizada {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .cardPersonalizada {
+    width: 500px;
+  }
+  .carouselImg {
+    width: 750px;
+  }
+}
+@media (max-width: 576px) {
+  .cardPersonalizada {
+    width: 500px;
+  }
+}
+.video {
+  width: 900px;
+}
+
+@media (max-width: 992px) {
+  .video {
+    width: 760px;
+  }
+}
+@media (max-width: 768px) {
+  .video {
+    width: 570px;
+  }
+}
+.imgBanner {
+  width: 900px;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .imgBanner {
+    width: 800px;
+  }
+}
+@media (max-width: 768px) {
+  .imgBanner {
+    width: 680px;
+  }
+}
+@media (max-width: 576px) {
+  .imgBanner {
+    width: 450px;
+  }
+  .cardPersonalizada {
+    width: 480px;
+  }
+}
+@media (max-width: 488px) {
+  .imgBanner {
+    width: 350px;
+  }
+  .cardPersonalizada {
+    width: 330px;
+  }
+}
+@media (max-width: 320px) {
+  .cardPersonalizada {
+    width: 220px;
+  }
+}
 .containerPelota {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0;
+  width: 90%;
 }
 
 .cardPelota {
@@ -81,26 +185,29 @@
   justify-content: space-between;
 }
 
-.cards {
-  border: 10px;
-}
-.cards .marca {
-  font-family: "Roboto Condensed", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-}
-.cards .estilo {
-  font-family: "Roboto Condensed", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-}
-
 .contenedoraVideos {
+  width: 90%;
   border: 0;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 .contenedoraVideos .video {
-  padding: 0;
+  padding: 10px;
+}
+
+.contenedorEnlases {
+  width: 90%;
+  border: 0;
+  margin: 0;
+  padding: 10px;
+}
+
+.banner {
+  width: 90%;
+}
+
+.contenedor__promocion {
+  width: 90%;
 }
 
 .descUbicacion {
@@ -113,9 +220,19 @@
   font-size: 20px;
 }
 
+.pieDespedida {
+  width: 90%;
+}
+
+.BannerFP {
+  width: 90%;
+}
+
 .footer {
   padding: 10px;
-  margin: 0;
+  border-radius: 10px;
+  border: 10px;
+  margin: 5px;
 }
 .footer .footerCopy {
   display: flex;

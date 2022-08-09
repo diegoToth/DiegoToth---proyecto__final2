@@ -9,6 +9,9 @@
     <meta name="description" content="La Tienda Deportiva donde encontras lo que necesitas para ejercitarte">
     <title>Todo deportes</title>
     <!-- CSS only -->
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+        <enlace href="https: //fonts.googleapis.com/css2? family= Anton & family= Shadows+Into+Light & display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,10 +20,11 @@
 <body class="container-fluid">
     <nav class="cont__navbar navbar navbar-expand-md bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img data-aos="zoom-in" class="w-25" src="./assets/img/download.jpg" alt="Imagen Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="imgNav navbar-brand" href="./index.html"><img data-aos="zoom-in" class="w-25" src="./assets/img/download.jpg" alt="Imagen Logo"></a>
+            <button class="butNav navbar-toggler col-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
@@ -56,17 +60,16 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/carousel/athlete-ready-to-run-with-are-you-ready-message.jpg" class="card-img-top" alt="Imagen senderista en montaña">
+                    <img src="./assets/img/carousel/adidas outlet.jpg" class="card-img-top" alt="Imagen senderista en montaña">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/Nike-Just-Do-It-Marketing.jpg" class="card-img-top" alt="Imagen de corredor en linea de partida">
+                    <img src="./assets/img/carousel/athlete-ready-to-run-with-are-you-ready-message.jpg" class="card-img-top" alt="Imagen de corredor en linea de partida">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/cyclist-man-racing-bike-outdoor.jpg" class="card-img-top" alt="Imagen ciclista">
+                    <img src="./assets/img/carousel/cyclist-man-racing-bike-outdoor.jpg" class="card-img-top" alt="Imagen ciclista">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/silhouette-of-person-standing-on-the-top-of-hill-under-the-beautiful-colorful-sky-in-the-morning.jpg
-                    " class="card-img-top" alt="Imagen mujer ejercitando en su casa">
+                    <img src="./assets/img/carousel/young-woman-exercising-at-home-healthy-lifestyle-has-become-my-everyday-routine.jpg" class="card-img-top" alt="Imagen mujer ejercitando en su casa">
                 </div>
             </div>
             
@@ -78,17 +81,20 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-            
-
         </div>
         <div>
-            <h1 class="titulo text-center">Todo Deportes</h1>        
-            <h2 id="subtitulo text-center">Tienda deportiva</h2>
+            <h1 class="titulo text-center">Todo Deportes</h1>
+            <div class="contSubtitulo">        
+                <h2 id="subtitulo text-center">Tienda deportiva</h2>
+            </div>
+            <div class="conteinerEslogan">
+                <h2 class="eslogan">Porque la vida es demasiado corta para llevar ropa aburrida</h2>
+            </div>
         </div>
     </header>
     <main>
         <div data-aos="fade-up" class="containerCards container-fluid cardCalzado d-flex flex-wrap justify-content-around">
-            <div class="cardPersonalizada col-2 card">
+            <div class="cardPersonalizada col-2 my-2 card">
                 <img data-aos="zoom-in" src="./assets/img/fichaConjubtoPuma.jpg" class="card-img-top col-3" alt="Imagen conjunto Puma">
                 <div class="cards card-body">
                     <p class="marca my-2">PUMA</p>
@@ -97,7 +103,7 @@
                     <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
-            <div class="cardPersonalizada col-2 card">
+            <div class="cardPersonalizada col-2 my-2 card">
                 <img data-aos="zoom-in" src="./assets/img/fichaRemeraBoca.webp" class="card-img-top col-3" alt="Imagen camiseta Boca">
                 <div class="cards card-body">
                     <p class="marca my-2">FÚTBOL</p>
@@ -106,7 +112,7 @@
                     <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
-            <div class="cardPersonalizada col-2 card">
+            <div class="cardPersonalizada col-2 my-2 card">
                 <img data-aos="zoom-in" src="./assets/img/campera_bomb_1_imagen1.jpg" class="card-img-top col-3" alt="Imagen campera">
                 <div class="cards card-body">
                     <p class="marca my-2">CAMPERA</p>
@@ -115,7 +121,7 @@
                     <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
-            <div class="cardPersonalizada col-2 card">
+            <div class="cardPersonalizada col-2 my-2 card">
                 <img data-aos="zoom-in" src="./assets/img/D_NQ_NP_801140-MLA48184307926_112021-O.jpg" class="card-img-top col-3" alt="Imagen kit inicial hockey">
                 <div class="cards card-body">
                     <p class="marca my-2">HOCKEY</p>
@@ -129,7 +135,7 @@
             <h3 class="h2">Novedades</h3>
         </div>
         <div data-aos="fade-up" class="containerCards container-fluid cardCalzado d-flex flex-wrap justify-content-around">
-            <div class="cardPersonalizada card my-2  col-justify-content-around col-2 ">
+            <div class="cardPersonalizada card my-2 col-2 ">
                 <img data-aos="zoom-in" src="./assets/img/D_NQ_NP_912987-MLA43206440339_082020-O.jpg" class="card-img-top col-3" alt="Imagen kit ejercito en casa">
                 <div class="cards cards card-body">
                     <p class="marca my-2">ACCESORIOS</p>
@@ -138,7 +144,7 @@
                     <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
-            <div class="cardPersonalizada card col-2 w-22">
+            <div class="cardPersonalizada card my-2 col-2 w-22">
                 <img data-aos="zoom-in" src="./assets/img/2288-3.jpg" class="card-img-top col-3" alt="imagen kit ping pong">
                 <div class="cards card-body">
                     <p class="marca my-2">RECREACIÓN</p>
@@ -147,7 +153,7 @@
                     <a href="#" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
-            <div class="cardPersonalizada card col-2 w-22">
+            <div class="cardPersonalizada card my-2 col-2 w-22">
                 <img data-aos="zoom-in" src="./assets/img/paris-saint-germain-home-stadium-kit-2021-22-infants_ss4_p-12057495+u-dnobbuun25j91q25i4+v-c519a8b53a47403aafe2d0b58f00ec36.webp" class="card-img-top col-3" alt="imagen equipo completa futbol PSG">
                 <div class="cards card-body">
                     <p class="marca my-2">FÚTBOL</p>
@@ -167,23 +173,23 @@
             </div>
         </div>
         <div class="contenedoraVideos d-flex row flex-wrap justify-content-center align-items-center">
-        <iframe class="video d-flex flex-wrap justify-content-around col-2 w-22" src="https://www.youtube.com/embed/NljGurzPM2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video d-flex flex-wrap justify-content-around" src="https://www.youtube.com/embed/NljGurzPM2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="video d-flex flex-wrap justify-content-around" src="https://www.youtube.com/embed/qvGvMR90Vk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="contenedorEnlases d-flex row flex-wrap justify-content-center align-items-center">
-            <a class="enlase col-md-5 d-flex flex-wrap justify-content-around" width="560" height="315" href="https://youtu.be/RP9Hx7Kf_EA" target="_blank"><img src="./assets/img/camiseta_boca_juniors_2019_2020qatar_titular_original-1.jpg" frameborder="0" class="enlaseAcceso card-img-top" alt="Presentacion Camiseta Boca"></a>
+            <a class="enlase col-md-5 d-flex flex-wrap justify-content-around" width="560" height="315" href="https://youtu.be/RP9Hx7Kf_EA" target="_blank"><img src="./assets/img/camiseta_boca_juniors_2019_2020qatar_titular_original-1.jpg" frameborder="0" class="enlaseAcceso card-img-top m-2" alt="Presentacion Camiseta Boca"></a>
             <a class="enlase col-md-5 d-flex flex-wrap justify-content-around" width="560" height="315" href="https://d20x44kddxtp6m.cloudfront.net/wp-lanacionar/Presna_adidas/20210322/60588144c9e77c0001016ea9/t_b8ec73865a15407aa878bd42af28becf_name_ARG_MAIN_GRID_1080_X_1350/file_720x1280-2000.mp4" frameborder="0" target="_blank"><img src="./assets/img/Camiseta-Argentina-Edicion-Especial-2022-frontal.jpg" class="enlaseAcceso card-img-top m-2" alt="presentacion camiseta argentina"></a>
         </div>
-        <section>
-            <div class="banner d-flex row flex-wrap justify-content-center align-items-center">
-                <img class="imgBanner" data-aos="fade-right" src="./assets/img/banner_664.jpg" alt="Publicidad Reebok">
+        <div class="contenedorBanner">
+            <div class="img-fluid d-flex flex-wrap justify-content-around my-w2">
+                <img class="imgBanner card-img-top" src="./assets/img/banner_664.jpg" alt="Publicidad Reebok">
             </div>
-            <div class="banner d-flex row flex-wrap justify-content-center align-items-center">
-                <img class="imgBanner d-flex row flex-wrap justify-content-center align-items-center" data-aos="fade-left" src="./assets/img/BANNER_L_N-RUNNING.jpg" alt="Publicidad Nike">
+            <div class="img-fluid d-flex flex-wrap justify-content-around my-2">
+                <img class="imgBanner card-img-top"src="./assets/img/BANNER_L_N-RUNNING.jpg" alt="Publicidad Nike">
             </div>
-        </section>
+        </div>
         <div class="row containerPelota my-2 d-flex flex-wrap justify-content-around">
-            <div class="row cardPelota col-10 col-md-4 my-2" style="width: 18rem;">
+            <div class="row cardPelota col-4 col-md-4 my-2" style="width: 18rem;">
                 <img src="./assets/img/D_NQ_NP_760498-MLA48601215352_122021-V.jpg" class="card-img-top" alt="imagen pelota basquet">
                 <div class="card-body">
                     <h5 class="card-title my-2">Basquet</h5>
@@ -191,7 +197,7 @@
                     <a href="#" class="btn btn-primary my-2">Go somewhere</a>
                 </div>
             </div>
-            <div class="row cardPelota col-10 col-md-4 my-2" style="width: 18rem;">
+            <div class="row cardPelota col-4 col-md-4 my-2" style="width: 18rem;">
                 <img src="./assets/img/D_NQ_NP_644310-MLV50572309698_072022-V.jpg" class="card-img-top" alt="imagen pelota voley">
                 <div class="card-body">
                     <h5 class="card-title my-2">Voley</h5>
@@ -199,7 +205,7 @@
                     <a href="#" class="btn btn-primary my-2">Go somewhere</a>
                 </div>
             </div>
-            <div class="row cardPelota col-10 col-md-4 my-2" style="width: 18rem;">
+            <div class="row cardPelota col-4 col-md-4 my-2" style="width: 18rem;">
                 <img src="./assets/img/D_NQ_NP_882638-MLA49571278966_042022-V.jpg" class="card-img-top" alt="imagen pelota futbol">
                 <div class="card-body">
                     <h5 class="card-title my-2">Futbol</h5>

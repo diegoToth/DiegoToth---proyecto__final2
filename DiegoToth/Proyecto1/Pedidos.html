@@ -16,7 +16,7 @@
 <body class="container-fluid">
     <nav class="cont__navbar navbar navbar-expand-md bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./Pedidos.html"><img data-aos="zoom-in" class="w-25" src="../assets/img/download.jpg" alt="Imagen Logo"></a>
+            <a class="imgNav navbar-brand" href="./Pedidos.html"><img data-aos="zoom-in" class="w-25" src="../assets/img/download.jpg" alt="Imagen Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -56,7 +56,7 @@
                 <img src="../assets/img/lvp.jpg" class="card-img-top" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="../assets/img/11-07-2021_la_seleccion_argentina_corono_la_1_crop1626043315540.jpg" class="card-img-top" alt="...">
+                <img src="../assets/img/11-07-2021_la_seleccion_argentina_corono_la_1_crop1626043315540 (1).jpg" class="card-img-top" alt="...">
                 </div>
                 <div class="carousel-item">
                 <img src="../assets/img/dieta-nadador.jpg" class="card-img-top" alt="...">
@@ -71,52 +71,57 @@
                 <span class="visually-hidden">Next</span>
             </button>
             </div>
-        <div>
-            <h1 class="titulo text-center">Todo Deportes</h1>        
-            <h2 id="subtitulo text-center">Tienda deportiva</h2>
-            <h2 id="Pedidos">Pedidos</h2>
-        </div>
+            <div>
+                <h1 class="titulo text-center">Todo Deportes</h1>
+                <div class="contSubtitulo">        
+                    <h2 id="subtitulo text-center">Tienda deportiva</h2>
+                </div>
+                <div class="conteinerEslogan">
+                    <h2 class="eslogan">Porque la vida es demasiado corta para llevar ropa aburrida</h2>
+                </div>
+            </div>
     </header>
     <main>
-        <div class="rectanguloPedi"></div>
-        <div class="compPedido">
-        <h3>¿Cómo completar pedido?</h3>
+        <div class="row rectanguloPedi">
+            <div class="compPedido">
+                <h3>¿Cómo completar pedido?</h3>
+            </div>
+            <div class="contenedorListainstructiva">
+                <ol>
+                    <li>Completá tu información personal</li>
+                    <li>Completá los detalles de tu pedido</li>
+                    <li>Elegí la forma de pago</li>
+                    <li>Ingresá la dirección donde queres recibir tu pedido</li>
+                    <li>Disfrutalo</li>
+                </ol>
+            </div>
         </div>
-        <div class="contenedorListainstructiva">
-        <ol>
-            <li>Completá tu información personal</li>
-            <li>Completá los detalles de tu pedido</li>
-            <li>Elegí la forma de pago</li>
-            <li>Ingresá la dirección donde queres recibir tu pedido</li>
-            <li>Disfrutalo</li>
-        </ol>
-        </div>
-        <div class="formInfo">
-        <form action="">
-            <fieldset>
-            <legend>Información Personal</legend>
-            <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
-            <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido" required>
-            <input type="text" name="Direccion" id="Direccion" placeholder="ingrese su direccion" required>
-            <input type="number" name="dni" id="dni" placeholder="ingrese su DNI" required>
-            <input type="email" name="email" id="email" placeholder="ingrese su email" required>
-            </fieldset>
-            <br>
-            <fieldset>
-            <legend>Información del Pedido</legend>
-            <input type="text" name="Nombre Producto" id="Nombre Producto" placeholder="Ingrese nombre producto">
-            <input type="number" name="Cantidad" id="Cantidad" placeholder="Ingrese cantidad de porciones">
-            <br>
-            <select name="talle">
-                <option value="l">Large</option>
-                <option value="m">Medium</option>
-                <option value="s">Small</option>
-            </select>
-            </fieldset>
-            <br>
-            <input class="btn" type="submit" value="Enviar">
-            <input class="btn" type="reset" value="Reiniciar">
-        </form>
+        <div class="row d-flex flex-row formInfo my-2">
+            <form>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
+                    <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido" required>
+                    <input type="text" name="Direccion" id="Direccion" placeholder="ingrese su direccion" required>
+                    <input type="number" name="dni" id="dni" placeholder="ingrese su DNI" required>
+                    <input type="email" name="email" id="email" placeholder="ingrese su email" required>
+                </fieldset>
+                <fieldset class="infoPedido">
+                    <legend>Información del Pedido</legend>
+                    <input type="text" name="Nombre Producto" id="Nombre Producto" placeholder="Ingrese nombre producto">
+                    <input type="number" name="Cantidad" id="Cantidad" placeholder="Ingrese cantidad de porciones">
+                    <select name="talle m-t-2">
+                        <option value="l">Large</option>
+                        <option value="m">Medium</option>
+                        <option value="s">Small</option>
+                    </select>
+                    
+                </fieldset>
+                <div>
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                    <input class="btn btn-primary" type="reset" value="Reiniciar">
+                </div>
+            </form>
         </div>
     </main>
     <aside class="sidebar">

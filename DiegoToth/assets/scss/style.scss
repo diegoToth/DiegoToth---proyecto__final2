@@ -10,11 +10,35 @@
 
 html, body {
     overflow: auto;
+    
 }
 
 .titulo{
-    color:$colorLetras;
+    display: flex;
     
+    
+    justify-content:space-around;
+    color:black;
+    
+    }
+.contSubtitulo{
+    display: flex;
+    justify-content:space-around;
+    
+
+}
+.conteinerEslogan{
+    display: flex;
+    justify-content:space-around;
+.eslogan{
+    width: 70%;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    }
 }
 .cont__navbar{
     padding: 0;
@@ -57,8 +81,19 @@ html, body {
 }
     
 }
+.video{
+    width: 900px;
+}
 
-
+.contenedorBanner{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .imgBanner{
+        margin: 0;
+    }
+}   
 @media(max-width:992px){
     .carouselImg{
         width: 970px;
@@ -66,7 +101,17 @@ html, body {
     .cardPersonalizada{
         width: 20%;
     }
+    .video{
+        width: 760px;
+    }
+    .contenedorBanner{
+        width: 90%;
+    .imgBanner{
+        width: 90%;
+    }
+    }
 }
+
 
 @media(max-width:768px){
     .cardPersonalizada{
@@ -76,40 +121,29 @@ html, body {
     .carouselImg{
         width: 750px;
     }
-}
-
-
-@media(max-width:576px){
-    .cardPersonalizada{
-        width: 500px;
-    }
-}
-.video{
-    width: 900px;
-}
-@media(max-width:992px){
-    .video{
-        width: 760px;
-    }
-}
-@media(max-width:768px){
-    .video{
-        width: 570px;
-    }
-}
-.imgBanner{
-    width: 900px;
-    margin: 0;
-}
-@media(max-width:992px){
-    .imgBanner{
-        width: 800px;
-    }
-}
-@media(max-width:768px){
     .imgBanner{
         width: 680px;
     }
+    .navMovil{
+        display: flex;}
+    .navBut{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+        }
+    .video{
+            width: 570px;
+        }
+    .rectanguloContac{
+            width: 600px;
+        }
+        .contenedorListainstructiva{
+            width: 600px;
+        }
+        .formInfo{
+            width: 600px;  
+        }
+    
 }
 @media(max-width:576px){
     .imgBanner{
@@ -118,7 +152,19 @@ html, body {
     .cardPersonalizada{
         width: 480px;
     }
-}
+    .cont__navbar{
+        display: flex;
+    }
+    .cardPersonalizada{
+        width: 500px;
+    }
+    .contenedorInfoPer{
+        width: 100%;
+        .comentario{
+            width: 90%;
+        }
+    }
+}   
 @media(max-width:488px){
     .imgBanner{
         width: 350px;
@@ -126,11 +172,59 @@ html, body {
     .cardPersonalizada{
         width: 330px;
     }
+    .containerNav{
+        display: flex;
+        .navBut{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+    }
+    .video{
+        width: 350px;
+    }
 }
 @media(max-width:320px){
     .cardPersonalizada{
-        width: 220px;
+        width: 200px;
     }
+    .imgNav{
+        width: 50%;
+    }
+    .imgBanner{
+        width:240px;
+    }
+    .carouselImg{
+        width: 90%;
+    }
+    .footer{
+        width: 90%;
+    }
+    .cardPersonalizada{
+        padding: 0%;
+    }
+    .contenedoraVideos{
+        width: 75%;
+        justify-content: center;
+    }
+    .contenedorEnlases{
+        width: 75%;
+        margin: 0%;
+    }
+    .enlase{
+        width: 75%;
+    }
+    .contenedorBanner{
+        width: 90%;
+        margin: 0%;
+    }
+    .rectanguloPedi{
+        width: 90%;
+    }
+    
+
+    
+    
 }
 .containerPelota{
     @include flex-row-center;
@@ -151,7 +245,7 @@ html, body {
 .cardPelota{
     @extend .cardPelota;
     background-color:white;
-    color: $colorLetras;
+    color: black;
     
 }
 @each $clave, $var in $justify {
@@ -163,9 +257,11 @@ html, body {
 
 .contenedoraVideos{
     width: 90%;
-    border: 0;
-    margin: 0;
+    margin:0%;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
     .video{
         padding: 10px;
     }
@@ -175,20 +271,25 @@ html, body {
     border: 0;
     margin: 0;
     padding: 10px;
+    .enlase{
+        padding: 0;
+        .enlaseAcceso{
+            padding: 0;
+        } 
+    }
+    
 }
-.banner{
-    width: 90%;
-}
+
 .contenedor__promocion{
     width:90%;
 }
 .descUbicacion{
-    background-color:$colorTerciario;
+    background-color:#6E98B8;
     .lugar{
-        font-size: $tamanioTexto;
+        font-size: 20px;
     }
     .direccion{
-        font-size: $tamanioTexto;
+        font-size: 20px;
 
     }
 }
@@ -227,14 +328,46 @@ html, body {
 }
 .cardCalzado{
     margin: 0;
-}.contenedorEnlase{
-    padding: 0;
-    .enlase{
-        padding: 0;
-        .enlaseAcceso{
-            padding: 0;
-        } 
+}
+.rectanguloPedi{
+    background-color: #6E98B8;
+    width: 30%;
+    border-radius: 10px;
+} 
+.rectanguloPedi{
+    width: 80%;
+    border: 10px;
+    margin: 5px;
+}  
+.formInfo{
+    background-color: #6E98B8;
+    width: 80%;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    .infoPedido{
+        border: 5px;
+        padding: 5px;
     }
     
 }
-
+.rectanguloContac{
+    background-color: $colorTerciario;
+    display: flex;
+    border: 5px;
+    margin: 5px;
+    width: 80%;
+    padding: 10px;
+    .contenedorInfoPers{
+        display: flex;
+        justify-content:space-around;
+        .infoPersonal{
+        .titContacto{
+            color: black;
+        }
+        .comentario{
+            width: 90%;
+        }
+    }
+    }
+}

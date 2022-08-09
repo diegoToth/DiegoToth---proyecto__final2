@@ -23,6 +23,27 @@ html, body {
 }
 
 .titulo {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+
+.contSubtitulo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.conteinerEslogan {
+  display: flex;
+  justify-content: space-around;
+}
+.conteinerEslogan .eslogan {
+  width: 70%;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
   color: black;
 }
 
@@ -67,12 +88,35 @@ html, body {
   font-weight: 600;
 }
 
+.video {
+  width: 900px;
+}
+
+.contenedorBanner {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contenedorBanner .imgBanner {
+  margin: 0;
+}
+
 @media (max-width: 992px) {
   .carouselImg {
     width: 970px;
   }
   .cardPersonalizada {
     width: 20%;
+  }
+  .video {
+    width: 760px;
+  }
+  .contenedorBanner {
+    width: 90%;
+  }
+  .contenedorBanner .imgBanner {
+    width: 90%;
   }
 }
 @media (max-width: 768px) {
@@ -82,39 +126,28 @@ html, body {
   .carouselImg {
     width: 750px;
   }
-}
-@media (max-width: 576px) {
-  .cardPersonalizada {
-    width: 500px;
+  .imgBanner {
+    width: 680px;
   }
-}
-.video {
-  width: 900px;
-}
-
-@media (max-width: 992px) {
-  .video {
-    width: 760px;
+  .navMovil {
+    display: flex;
   }
-}
-@media (max-width: 768px) {
+  .navBut {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
   .video {
     width: 570px;
   }
-}
-.imgBanner {
-  width: 900px;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .imgBanner {
-    width: 800px;
+  .rectanguloContac {
+    width: 600px;
   }
-}
-@media (max-width: 768px) {
-  .imgBanner {
-    width: 680px;
+  .contenedorListainstructiva {
+    width: 600px;
+  }
+  .formInfo {
+    width: 600px;
   }
 }
 @media (max-width: 576px) {
@@ -124,6 +157,18 @@ html, body {
   .cardPersonalizada {
     width: 480px;
   }
+  .cont__navbar {
+    display: flex;
+  }
+  .cardPersonalizada {
+    width: 500px;
+  }
+  .contenedorInfoPer {
+    width: 100%;
+  }
+  .contenedorInfoPer .comentario {
+    width: 90%;
+  }
 }
 @media (max-width: 488px) {
   .imgBanner {
@@ -132,10 +177,54 @@ html, body {
   .cardPersonalizada {
     width: 330px;
   }
+  .containerNav {
+    display: flex;
+  }
+  .containerNav .navBut {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+  .video {
+    width: 350px;
+  }
 }
 @media (max-width: 320px) {
   .cardPersonalizada {
-    width: 220px;
+    width: 200px;
+  }
+  .imgNav {
+    width: 50%;
+  }
+  .imgBanner {
+    width: 240px;
+  }
+  .carouselImg {
+    width: 90%;
+  }
+  .footer {
+    width: 90%;
+  }
+  .cardPersonalizada {
+    padding: 0%;
+  }
+  .contenedoraVideos {
+    width: 75%;
+    justify-content: center;
+  }
+  .contenedorEnlases {
+    width: 75%;
+    margin: 0%;
+  }
+  .enlase {
+    width: 75%;
+  }
+  .contenedorBanner {
+    width: 90%;
+    margin: 0%;
+  }
+  .rectanguloPedi {
+    width: 90%;
   }
 }
 .containerPelota {
@@ -187,9 +276,10 @@ html, body {
 
 .contenedoraVideos {
   width: 90%;
-  border: 0;
-  margin: 0;
+  margin: 0%;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .contenedoraVideos .video {
   padding: 10px;
@@ -201,9 +291,11 @@ html, body {
   margin: 0;
   padding: 10px;
 }
-
-.banner {
-  width: 90%;
+.contenedorEnlases .enlase {
+  padding: 0;
+}
+.contenedorEnlases .enlase .enlaseAcceso {
+  padding: 0;
 }
 
 .contenedor__promocion {
@@ -260,12 +352,45 @@ html, body {
   margin: 0;
 }
 
-.contenedorEnlase {
-  padding: 0;
+.rectanguloPedi {
+  background-color: #6E98B8;
+  width: 30%;
+  border-radius: 10px;
 }
-.contenedorEnlase .enlase {
-  padding: 0;
+
+.rectanguloPedi {
+  width: 80%;
+  border: 10px;
+  margin: 5px;
 }
-.contenedorEnlase .enlase .enlaseAcceso {
-  padding: 0;
+
+.formInfo {
+  background-color: #6E98B8;
+  width: 80%;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+.formInfo .infoPedido {
+  border: 5px;
+  padding: 5px;
+}
+
+.rectanguloContac {
+  background-color: #6E98B8;
+  display: flex;
+  border: 5px;
+  margin: 5px;
+  width: 80%;
+  padding: 10px;
+}
+.rectanguloContac .contenedorInfoPers {
+  display: flex;
+  justify-content: space-around;
+}
+.rectanguloContac .contenedorInfoPers .infoPersonal .titContacto {
+  color: black;
+}
+.rectanguloContac .contenedorInfoPers .infoPersonal .comentario {
+  width: 90%;
 }
